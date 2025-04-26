@@ -1,6 +1,6 @@
 # E-commerce
 
-# Table of content
+### Table of content
 - [Executive Summary](#executive-summary)
 - [Data Sources and Tools](#data-sources-and-tools)
 - [Data Cleaning and Pre-processing](#data-cleaning-and-pre-processing)
@@ -39,9 +39,7 @@ The following tasks were performed to ensure data quality:
 FORMAT(InvoiceDate,'MMM') as month,SUM(Quantity* Unitprice) as totalsales
 From E_commerce
 Group by YEAR(InvoiceDate), MONTH(InvoiceDate),FORMAT(InvoiceDate,'MMM')
-Order ![Power BI Desktop 4_26_2025 7_05_46 AM](https://github.com/user-attachments/assets/ba434db7-9cad-4c9b-8a5e-2e23583477c7)
-by totalsales desc;
-
+Orderby totalsales desc;
 
 2. Select Stockcode, SUM(Quantity *Unitprice) as Product_sales
 From E_commerce
@@ -81,7 +79,7 @@ I had to remove some data due to irregularity in the data set like blank spaces,
 - https://www.youtube.com/watch?v=0N9xekdKCwk
 - Team effort
 - Other dataset
-- 
+
 
 
 
